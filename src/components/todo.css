@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .header h1 {
+    text-align: center;
+    color: #5a67d8;
+  }
+  
+  .todo-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .input-item {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .input-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #5a67d8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .input-button:hover {
+    background-color: #434190;
+  }
+  
+  .list-container {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-item label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-item .completed {
+    text-decoration: line-through;
+    color: #a0aec0;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #5a67d8;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .delete-btn:hover {
+    color: #e53e3e;
+  }
+  
+  .edit-btn:hover {
+    color: #2b6cb0;
+  }
+  .completed {
+    text-decoration: line-through;  /* Strikes through text to mark as completed */
+    color: #888; /* Change color for completed tasks (optional) */
+  }
+  /* Styles for Save and Cancel buttons */
+.edit-form button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button:hover {
+  opacity: 0.9;
+}
+
+/* Save button style */
+.primary-save {
+  background-color: #4caf50; /* Green color */
+  color: white;
+}
+
+/* Cancel button style */
+.edit-form button:last-child {
+  background-color: #f44336; /* Red color */
+  color: white;
+}
+
+/* Styles for Edit and Delete buttons */
+.task-item button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.task-item button:hover {
+  opacity: 0.9;
+  color: #ddd;
+}
+
+/* Edit button style */
+.task-item .edit-btn {
+  background-color: #ff9800; /* Orange color */
+}
+
+/* Delete button style */
+.task-item .delete-btn {
+  background-color: #f44336; /* Red color */
+}
+.search-item {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as necessary */
+  margin-top: 10px;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.edit-form input:focus {
+  border-color: #5b9bd5;
+  outline: none;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+  
+  
